@@ -101,6 +101,10 @@ PRODUCT_PACKAGES += \
     libril \
     libprotobuf-cpp-full \
     minisfservice \
-    minisfservice \
+    libyuv \
+    libexif \
+    libsoftkeymasterdevice \
+    libpuresoftkeymasterdevice \
     libdrm \
-    libion 
+    libion \
+    vibrator.default
