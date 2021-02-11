@@ -89,8 +89,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi_8953
 
 # Verity
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
+#PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
+#$(call inherit-product, build/target/product/verity.mk)
 
 # Halium required bits:
 # Missing dependencies needed in Halium
@@ -101,6 +101,10 @@ PRODUCT_PACKAGES += \
     libril \
     libprotobuf-cpp-full \
     minisfservice \
-    minisfservice \
+    libyuv \
+    libexif \
+    libsoftkeymasterdevice \
+    libpuresoftkeymasterdevice \
     libdrm \
-    libion 
+    libion \
+    vibrator.default
